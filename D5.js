@@ -15,7 +15,15 @@ const area = function(l1, l2){
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
-
+const crazySum = function (a, b){
+    let sum = 0;
+    if (a === b){
+      sum = (a + b) * 3
+    } else {
+      sum = a + b
+    }
+    return sum;
+  }
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
