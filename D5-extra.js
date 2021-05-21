@@ -104,7 +104,16 @@ Check if the email is valid using string methods. The email (in this example) is
 Write a function that receives a date d as parameter and calculates the number of days passes since the d.
 */
 
-/* WRITE YOUR CODE HERE */
+const datee = function (d){
+    let aDate = new Date();
+    let bDate = aDate.getDate();
+    let numDate = d - bDate;
+    if (d < bDate){
+      return `${Math.abs(numDate)} has passed`
+    } else if (d > numDate){
+      return numDate + " days left"
+    } 
+  }
 
 /* EXERCISE 21
 Write a function "matrixGenerator" that receives x and y as parameter. The result should be a matrix of x times y with, as value, the index of the position.
