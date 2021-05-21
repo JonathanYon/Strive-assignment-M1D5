@@ -36,7 +36,22 @@ In your eCommerce you have an array of objects called shoppingCart. In this arra
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
 
-/* WRITE YOUR CODE HERE */
+let shoppingCart = [
+    {id: 11, name: "iphone3", quantity: 10, price: 200},
+    {id: 12, name: "iphone4", quantity: 20, price: 300},
+    {id: 13, name: "iphone5", quantity: 30, price: 400},
+    {id: 14, name: "iphone6", quantity: 40, price: 500},
+    {id: 15, name: "iphone7", quantity: 50, price: 600}
+  ]
+
+  const shippingCartTotal = function (){
+    let total = 0;
+    for (let i = 0; i < shoppingCart.length; i++){
+      total += shoppingCart[i].price;
+  }
+  return total;
+  }
+  console.log(shippingCartTotal())
 
 /* EXERCISE 13
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
