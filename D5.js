@@ -102,7 +102,13 @@ const cutString = function (num){
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
+const giveMeRandom = function (num){
+    let arr1 = [];
+    for (let i = 0; i < num; i++){
+      arr1.push(Math.floor(Math.random() * 11))
+    }
+    return arr1;
+  }
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
