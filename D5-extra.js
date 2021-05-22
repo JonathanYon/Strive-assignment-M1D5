@@ -95,7 +95,13 @@ Write a function "average" which receives an array and return the average value.
 Write a function "longest" to find the longest string from an given array of strings.
 */
 
-/* WRITE YOUR CODE HERE */
+const longest = function (string){
+  var longestWords = string.split(' ').sort(function(a,b){
+      return b.length - a.length;
+  });
+  return longestWords[0];
+}
+console.log(longest('yoni is the mannnnnn'))
 
 /* EXERCISE 19
 Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
