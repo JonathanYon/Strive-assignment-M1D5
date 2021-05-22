@@ -32,7 +32,8 @@ const giveMeRandom = function (num){
 console.log(checkArray(giveMeRandom(4)))
 
 /* EXERCISE 12
-In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
+In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, 
+a name, an id and the quantity to be shipped.
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
 
@@ -58,7 +59,10 @@ In your eCommerce you have an array of objects called shoppingCart. In this arra
 Create a function "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
 
-/* WRITE YOUR CODE HERE */
+const addToShoppingCart = function(item){
+  shoppingCart.push(item)
+}
+addToShoppingCart({id: 16, name: "iphone8", quantity: 60, price: 700})
 
 /* EXERCISE 14
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
